@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>My Resume</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #333;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            text-align: center;
+        }
+        nav ul li {
+            display: inline;
+            margin: 10px;
+        }
+        a {
+            text-decoration: none;
+            color: #fff;
+        }
+        section {
+            margin: 10px;
+        }
+        section a {
+            color: #000;
+            text-decoration: underline;
+        }
+        section:not(:last-child) {
+            border-bottom: 1px solid #ccc;
+        }
+        .center-button {
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>KEERTHANA SRI G</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#career-objective">Career Objective</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#languages-known">Languages Known</a></li>
+            <li><a href="#achievements">Achievements</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <section id="career-objective">
+        <h2>CAREER OBJECTIVE</h2>
+        <p>An independent and self-motivated individual looking for a challenging position in a field.</p>
+    </section>
+    <section id="education">
+        <h2>EDUCATION</h2>
+        <p>Bachelor of Science-Computer Technology</p>
+        <p>KG College of Arts and Science</p>
+        <p>2021-Present</p>
+        <p><br>Higher Secondary School Leaving Certificate</p>
+        <p>Metro Matriculation Higher Secondary School</p>
+        <p>2020-2021</p>
+        <p>Percentage-82.38</p>
+        <p><br>Secondary School Leaving Certificate</p>
+        <p>San Jose Matriculation Higher Secondary School</p>
+        <p>2018-2019</p>
+        <p>Percentage-76.80</p>
+    </section>
+    <section id="skills">
+        <h2>SKILLS</h2>
+        <h3>TECHNICAL SKILLS</h3>
+        <p>C</p>
+        <p>C++</p>
+        <p>Java</p>
+        <p>Python</p>
+        <h3><br>SOFT SKILLS</h3>
+        <p>Adaptability</p>
+        <p>Decision Making</p>
+        <p>Creativity</p>
+        <p>Team Work</p>
+    </section>
+    <section id="languages-known">
+        <h2>LANGUAGES KNOWN</h2>
+        <p>Tamil (Read/Write/Speak)</p>
+        <p>English (Read/Write/Speak)</p>
+        <p>Kannada (Speak)</p>
+    </section>
+    <section id="achievements">
+        <h2>ACHIEVEMENTS</h2>
+        <p>Secured 1st prize in the "Brain Buzz Competition" in the "Technivanz 2023" at Dr.R.V. Arts and Science College (February 2023).</p>
+        <p>Secured 2nd place in "Quiz Competition" in the "Explorica 2k22" by the Department of Computer Science, KGiSL Institute of Information Management (April 2022).</p>
+        <p>Completed Level eight in "Communicative English Skills" and secured grade “A+" by ILM’S English Today (2016-2017).</p>
+        <p>Participated in "Tamilnadu State Level English Proficiency Test" and secured "Distinction" conducted by Bharath Institute of English, Kalakad, Tirunelveli (January 2019).</p>
+    </section>
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:keerthukeerthanasri@gmail.com">keerthukeerthanasri@gmail.com</a></p>
+    </section>
+    <section id="resume" style="display: none;">
+        <h2>Resume</h2>
+        <img id="resume-image" src="resume.jpg" alt="Resume" style="max-width: 100%;">
+    </section>
+    <div class="center-button">
+        <button id="resume-button">View Resume</button>
+    </div>
+    <hr>
+    <script>
+        
+const resumeButton = document.getElementById('resume-button');
+    const resumeSection = document.getElementById('resume');
+
+    let isResumeVisible = false; // Track the visibility state
+
+    resumeButton.addEventListener('click', () => {
+        if (isResumeVisible) {
+            // Hide the resume section
+            resumeSection.style.display = 'none';
+            isResumeVisible = false;
+        } else {
+            // Show the resume section
+            resumeSection.style.display = 'block';
+            isResumeVisible = true;
+        }
+    });
+    </script>
+</body>
+</html>
